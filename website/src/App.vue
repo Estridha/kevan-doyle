@@ -1,30 +1,54 @@
+<script>
+import BaseFooter from "@/components/BaseFooter.vue";
+import BaseHeader from "@/components/BaseHeader.vue";
+import BasePage from "@/components/BasePage.vue";
+import SideBar from "@/components/sidebar/SideBar.vue";
+import { sidebarWidth } from "./components/sidebar/state";
+export default {
+  components: {
+    BaseFooter,
+    BasePage,
+    BaseHeader,
+    SideBar,
+  },
+  computed: {
+    currentRouteName() {
+      return this.$route.name;
+    },
+  },
+  setup() {
+    return { sidebarWidth };
+  },
+};
+</script>
+
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <BaseHeader v-if="currentRouteName !== 'home'" />
+  <SideBar v-if="currentRouteName !== 'home'" />
+  <BasePage />
+  <BaseFooter v-if="currentRouteName !== 'home'" />
 </template>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /*  background-image: url(@/assets/images/background.jpg);
+  background-size: cover; */
+  position: relative;
+  display: border-box;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+*,
+body {
+  display: border-box;
+  color: black;
+  margin: 0;
+  padding: 0;
 }
 </style>

@@ -2,6 +2,7 @@
   <div class="commercial-view">
     <ImageLink
       v-for="company in companies"
+      :key="company.id"
       :fileName="company.photoSrc"
       :buttonText="company.name"
       @click="goToPage(company.id)"

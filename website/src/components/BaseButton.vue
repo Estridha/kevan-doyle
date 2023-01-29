@@ -1,7 +1,7 @@
 <template>
   <button
+  :class="buttonClass"
    :type="type"
-    :class="class"
     :label="text"
     :disabled="disabled"
     @click="$emit('userClicked')"
@@ -20,7 +20,7 @@ export default {
     type: {
       type: String,
     },
-    class: {
+    buttonClass: {
       type: String,
     },
     disabled: {

@@ -4,8 +4,10 @@
     <img :src="selectedImage" alt="some" />
   </div>
   <div class="row">
+    <!-- probably need to change key -->
     <img
       v-for="image in images"
+      :key="image[index]"
       :src="image.pathLong"
       @click="selectImage(image.pathLong)"
     />
@@ -21,17 +23,6 @@ export default {
       images: [],
       selectedImage: "",
     };
-  },
-  computed: {
-    imgSrc() {
-      switch (this.id) {
-        case "nomadix":
-          return "@/assets/images/commercial/nomadix";
-        case "b":
-          return "/path/to/b/context/" + this.publication.userPicture;
-        // ...
-      }
-    },
   },
   mounted() {
     switch (this.id) {

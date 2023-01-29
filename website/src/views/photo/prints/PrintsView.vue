@@ -2,6 +2,7 @@
     <div class="prints-view">
       <ImageLink
         v-for="project in projects"
+        :key="project.id"
         :fileName="project.photoSrc"
         :buttonText="project.name"
         @click="goToPage(project.id)"

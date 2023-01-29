@@ -3,7 +3,7 @@
     <img class="image-link" :src="require(`@/assets/images/${fileName}`)" />
     <div class="button-container">
       <BaseButton
-        class="tertiary"
+        buttonClass="tertiary"
         :text="buttonText"
         @userClicked="$emit('userClicked')"
       />

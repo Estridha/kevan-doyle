@@ -2,24 +2,17 @@
   <div class="photo-view">
     <div class="link commercial">
       <div class="button-container">
-        <BaseButton class="tertiary" text="Commercial" @userClicked="goToPage('commercial')"/>
+        <BaseButton buttonClass="tertiary" text="Commercial" @userClicked="goToPage('commercial')"/>
       </div> 
     </div>
     <div class="link prints">
       <div class="button-container">
-      <BaseButton class="tertiary" text="Prints" @userClicked="goToPage('prints')"/></div></div>
-    <!-- <ImageLink
-    v-for="category in categories"
-      :fileName="category.photo"
-      :buttonText="category.title"
-      @userClicked="goToPage(category.title)"
-    /> -->
+      <BaseButton buttonClass="tertiary" text="Prints" @userClicked="goToPage('prints')"/></div></div>
   </div>
 </template>
 
 <script>
 import BaseButton from "@/components/BaseButton.vue";
-import ImageLink from "@/components/ImageLink.vue";
 
 export default {
   name: "PhotoView",
@@ -33,7 +26,6 @@ export default {
     };
   },
   components: {
-    ImageLink,
     BaseButton
 },
   methods: {

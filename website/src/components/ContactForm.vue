@@ -18,7 +18,7 @@
             <label for="message">Message:</label>
             <textarea name="Message" rows="10"></textarea>
           </div>
-            <BaseButton type="submit" class="primary" text="send" />
+            <BaseButton type="submit" buttonClass="primary" text="send" />
         </form>
     </div>
 </template>

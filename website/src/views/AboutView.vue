@@ -32,7 +32,7 @@
           Doyle is here to fulfill all your content and filming needs."
         />
         <router-link to="/photo"
-          ><BaseButton class="primary" text="Explore his work"
+          ><BaseButton buttonClass="primary" text="Explore his work"
         /></router-link>
       </div>
     </div>

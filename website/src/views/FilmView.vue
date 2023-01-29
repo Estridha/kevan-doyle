@@ -12,7 +12,7 @@
     </div>
     <FilmProject
     v-for="film in films"
-      :id="film.id"
+      :key="film.id"
       :title="film.title"
       :filmSrc="film.src"
     />
@@ -22,7 +22,6 @@
 
 <script>
 import BaseH2 from "@/components/BaseH2.vue";
-import BaseParagraph from "@/components/BaseParagraph.vue";
 import FilmProject from "@/components/FilmProject.vue";
 export default {
   name: "FilmView",
@@ -47,7 +46,6 @@ export default {
   },
   components: {
     BaseH2,
-    BaseParagraph,
     FilmProject,
   },
 };

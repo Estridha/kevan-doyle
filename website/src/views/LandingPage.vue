@@ -1,7 +1,7 @@
 <template>
   <div class="landing-page-container">
     <h1 class="landing-page-desc">Ready to make your business <br/> look like it deserves</h1>
-	<router-link to="/about"><BaseButton class="secondary" text="Enter"/></router-link>
+	<router-link to="/about"><BaseButton buttonClass="secondary" text="Enter"/></router-link>
     <div class="video-container">
 			<video src="https://traversymedia.com/downloads/video.mov" autoplay muted loop></video>
 		</div>

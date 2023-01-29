@@ -2,19 +2,19 @@
   <div class="footer-container">
     <div class="footer-element copyright"><p>Design by EsDesigns</p></div>
     <div class="footer-element social-icons">
-      <a href="#"><Icon name="youtube"/></a>
-      <a href="#"><Icon name="linkedin"/></a>
-      <a href="#"><Icon name="instagram"/></a>
+      <a href="#"><BaseIcon name="youtube"/></a>
+      <a href="#"><BaseIcon name="linkedin"/></a>
+      <a href="#"><BaseIcon name="instagram"/></a>
     </div>
   </div>
 </template>
 
 <script>
-import Icon from './Icon.vue';
+import BaseIcon from './BaseIcon.vue';
 export default {
   name: "BaseFooter",
   components: {
-    Icon,
+    BaseIcon,
   },
   /*     props: {
       msg: String

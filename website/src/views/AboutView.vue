@@ -178,14 +178,18 @@ export default {
 <style lang="scss" scoped>
 .about-me-image {
   width: 100%;
+  border-radius: 50%;
 }
 .page-section {
   display: flex;
   margin-bottom: 2rem;
 
   .content-container {
+    @media screen and (min-width: 845px) {
     display: flex;
-    margin: 1rem 0;
+    align-items: flex-start;
+    margin: 0 2rem;
+    }
   }
 
   .desc-container {

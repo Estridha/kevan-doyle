@@ -41,10 +41,13 @@
   
   <style lang="scss" scoped>
   .prints-view {
-    overflow:auto; 
-  padding: 0 1.5rem;
+    overflow: auto; 
   display: grid;
-  grid-template-columns: calc(100%/2) calc(100%/2);
+
+  @media screen and (min-width: 480px) {
+    padding: 0 1.5rem;
+    grid-template-columns: calc(100%/2) calc(100%/2);
+  }
   }
   </style>
   

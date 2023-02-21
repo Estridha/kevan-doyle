@@ -2,20 +2,16 @@
   <div class="footer-container">
     <div class="footer-element copyright"><p>Design by EsDesigns</p></div>
     <div class="footer-element social-icons">
-      <a href="#"><BaseIcon name="youtube"/></a>
-      <a href="#"><BaseIcon name="linkedin"/></a>
-      <a href="#"><BaseIcon name="instagram"/></a>
+      <a href="#"><img src="@/assets/icons/youtube.svg" alt=""></a>
+      <a href="#"><img src="@/assets/icons/linkedin.svg" alt=""></a>
+      <a href="#"><img src="@/assets/icons/instagram.svg" alt=""></a>
     </div>
   </div>
 </template>
 
 <script>
-import BaseIcon from './BaseIcon.vue';
 export default {
   name: "BaseFooter",
-  components: {
-    BaseIcon,
-  },
   /*     props: {
       msg: String
     } */
@@ -30,7 +26,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 10%;
+  height: 7%;
 
   @media screen and (max-width: 1025px) {
       justify-content: center;

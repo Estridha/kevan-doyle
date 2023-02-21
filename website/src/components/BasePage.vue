@@ -2,7 +2,7 @@
   <div class="page-container">
     <BaseHeader />
     <SideBar />
-      <router-view :style="{ minHeight: (innerHeight*0.75).toString() + 'px' }" />
+      <router-view :style="{ minHeight: (innerHeight*0.78).toString() + 'px' }" />
     <BaseFooter />
   </div>
 </template>

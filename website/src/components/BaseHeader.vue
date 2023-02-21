@@ -11,22 +11,8 @@
 </template>
 
 <script>
-
 export default {
   name: "BaseHeader",
-  data() {
-    return {
-      scrollPosition: null,
-    };
-  },
-  methods: {
-    updateScroll() {
-      this.scrollPosition = window.scrollY;
-    },
-  },
-  mounted() {
-      window.addEventListener("scroll", this.updateScroll);
-  },
 };
 </script>
 
@@ -35,11 +21,13 @@ export default {
 .header-container {
   position: sticky;
   top: 0;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  padding: 2.5rem;
+  height: 15%;
+  padding: 0 2rem;
   z-index: 1;
   a,
   li {
@@ -47,9 +35,8 @@ export default {
     margin: 0 1rem;
     text-decoration: none;
     &:last-child {
-    margin: 0 0 0 1rem;
-}
-
+      margin: 0 0 0 1rem;
+    }
   }
 
   a.router-link-exact-active {

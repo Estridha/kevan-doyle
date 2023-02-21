@@ -1,13 +1,23 @@
 <template>
-  <div class="photo-view">
+  <div class="wrapper">
     <div class="link commercial">
       <div class="button-container">
-        <BaseButton buttonClass="tertiary" text="Commercial" @userClicked="goToPage('commercial')"/>
-      </div> 
+        <BaseButton
+          buttonClass="tertiary"
+          text="Commercial"
+          @userClicked="goToPage('commercial')"
+        />
+      </div>
     </div>
     <div class="link prints">
       <div class="button-container">
-      <BaseButton buttonClass="tertiary" text="Prints" @userClicked="goToPage('prints')"/></div></div>
+        <BaseButton
+          buttonClass="tertiary"
+          text="Prints"
+          @userClicked="goToPage('prints')"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -19,15 +29,14 @@ export default {
   data() {
     return {
       categories: [
-        { id: 1, title: "commercial", photo: 'commercial.jpg' },
-        { id: 2, title: "editorial", photo: 'editorial.jpg' },
-        { id: 3, title: "prints", photo: 'prints.jpg' }
+        { id: 1, title: "commercial", photo: "commercial.jpg" },
+        { id: 3, title: "prints", photo: "prints.jpg" },
       ],
     };
   },
   components: {
-    BaseButton
-},
+    BaseButton,
+  },
   methods: {
     goToPage(page) {
       if (page === "commercial") {
@@ -40,12 +49,16 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.photo-view {
-  margin: 0 2.5rem;
+<style scoped lang="scss">
+.wrapper {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  & > * {
+    height: 50%;
+  }
 
   @media screen and (max-width: 845px) {
     margin: 0;
@@ -61,22 +74,22 @@ export default {
     }
   }
   .link {
-    display: grid;
-    align-items: center;
-    width: 100%;
-    height: calc(100vh / 2 - 4rem);
+    min-height: 50%;
     margin: 0.5rem 0;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &.commercial {
-    background-image: url('@/assets/images/commercial/commercial.jpg');
-    background-size: cover;
+      background-image: url("@/assets/images/commercial/commercial.jpg");
+      background-size: cover;
     }
 
     &.prints {
-    background-image: url('@/assets/images/prints.jpg');
-    background-size: cover;
+      background-image: url("@/assets/images/prints.jpg");
+      background-size: cover;
     }
-
   }
 }
 </style>

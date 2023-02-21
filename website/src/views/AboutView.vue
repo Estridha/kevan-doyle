@@ -2,7 +2,7 @@
   <div class="about-container">
     <div class="page-section">
       <div class="content-container">
-        <BaseH2 title="About the photographer" />
+        <BasePageTitle title="About the photographer" />
         <div class="desc-container">
           <BaseParagraph
             text="Originally from Los Angeles, Kevan Doyle has worked on documentaries,
@@ -162,6 +162,7 @@
 import BaseButton from "@/components/BaseButton.vue";
 import BaseParagraph from "@/components/BaseParagraph.vue";
 import BaseH2 from "@/components/BaseH2.vue";
+import BasePageTitle from "@/components/BasePageTitle.vue";
 
 export default {
   name: "AboutPage",
@@ -169,7 +170,8 @@ export default {
     BaseButton,
     BaseH2,
     BaseParagraph,
-  },
+    BasePageTitle
+},
 };
 </script>
 

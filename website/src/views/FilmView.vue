@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <BaseH2 title="Film"/>
+    <BasePageTitle title="Film"/>
     <div class="reel-container">
       <iframe
         src="https://www.youtube.com/embed/OPIdmPPCnyw?controls=0&modestbranding=1&autoplay=1"
@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import BaseH2 from "@/components/BaseH2.vue";
+import BasePageTitle from "@/components/BasePageTitle.vue";
 import FilmProject from "@/components/FilmProject.vue";
 export default {
   name: "FilmView",
@@ -45,9 +45,9 @@ export default {
     };
   },
   components: {
-    BaseH2,
     FilmProject,
-  },
+    BasePageTitle
+},
 };
 </script>
 

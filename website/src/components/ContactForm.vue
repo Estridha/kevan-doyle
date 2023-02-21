@@ -1,5 +1,4 @@
 <template>
-  <BaseH2 title="Contact Form"/>
     <div class="main-container">
         <form class="form-group" action="https://formsubmit.co/6b09b0cefdfd08ac5ba34b5da89d946c" method="POST">
           <!-- Honeypot -->
@@ -25,11 +24,10 @@
 
 <script>
 import BaseButton from './BaseButton.vue';
-import BaseH2 from './BaseH2.vue';
+
 export default {
   name: "ContactForm",
   components: {
-    BaseH2,
     BaseButton,
   }
 };
@@ -39,7 +37,6 @@ export default {
 .main-container {
   padding: 20px;
   border-radius: 4px;
-  margin: 2rem 0;
   background-color: var(--block-background-color);
   @media screen and (max-width: 845px) {
       margin: 2rem 0;

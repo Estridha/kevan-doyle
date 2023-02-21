@@ -43,8 +43,6 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Spectral&display=swap');
 @import './assets/styles/variables.css';
 #app {
-  /*  background-image: url(@/assets/images/background.jpg);
-  background-size: cover; */
   position: relative;
   display: border-box;
   font-family: "Montserrat", sans-serif;
@@ -62,7 +60,6 @@ export default {
   a, button {
     font-family: 'Spectral', serif;
   }
-
 
 }
 

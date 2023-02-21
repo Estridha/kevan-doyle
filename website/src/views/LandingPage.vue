@@ -1,12 +1,14 @@
 <template>
   <div class="landing-page-container">
-    <h1 class="landing-page-desc">
-      Photographer <br />
-      Kevan Doyle
-    </h1>
-    <router-link to="/about"
-      ><BaseButton buttonClass="secondary" text="Enter"
-    /></router-link>
+    <div class="content-container">
+      <h1 class="landing-page-desc">
+        Photographer <br />
+        Kevan Doyle
+      </h1>
+      <router-link to="/about"
+        ><BaseButton buttonClass="secondary" text="Enter"
+      /></router-link>
+    </div>
   </div>
 </template>
 
@@ -23,15 +25,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .landing-page-container {
   overflow: hidden;
   height: 100vh;
-  width: 100vw;
-  background-image: url(@/assets/images/prints/fine-art/fine-art\ \(7\).jpg);
+  width: calc(100vw - 4rem);
+  background-image: url("@/assets/images/prints/central-america/central-america (1).jpg");
+  padding: 2rem;
   background-size: cover;
-}
-.landing-page-desc {
-  padding-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+
+  h1 {
+    color: var(--light-color);
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+  }
 }
 </style>

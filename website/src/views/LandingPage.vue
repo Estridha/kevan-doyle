@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 .landing-page-container {
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
   width: calc(100vw - 4rem);
   background-image: url("@/assets/images/prints/central-america/central-america (1).jpg");
   padding: 2rem;

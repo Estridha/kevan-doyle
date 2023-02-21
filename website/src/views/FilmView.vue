@@ -1,5 +1,5 @@
 <template>
-  <div class="film-view-container">
+  <div class="wrapper">
     <BaseH2 title="Film"/>
     <div class="reel-container">
       <iframe
@@ -51,7 +51,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 .reel-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */

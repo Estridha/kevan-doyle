@@ -1,0 +1,9 @@
+:root {
+    --light-color: #ffffff;
+    --dark-color: #000000;
+    --block-background-color: #00000012;
+    --link-color: #0008ff;
+    --link-hover-color: #0008ff84;
+    --button-color: #fa2742;
+    --padding: 2rem;
+  }

@@ -15,9 +15,9 @@
   };
   </script>
   
-  <style lang="scss" scoped>
+  <style scoped lang="scss">
   p {
-    margin: 1rem;
+    margin: 2rem 0;
   }
   </style>
   

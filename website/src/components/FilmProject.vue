@@ -1,7 +1,7 @@
 <template>
     <div class="main-container">
       <div class="project-desc">
-        <BaseH2 :title=title />
+        <BaseH2 :title="title" />
       </div>
       <div class="project-video">
         <iframe
@@ -38,8 +38,8 @@
   .main-container {
   margin: 1rem 0rem;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 
   @media screen and (max-width: 1025px) {
     flex-direction: column;

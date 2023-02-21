@@ -1,6 +1,7 @@
 <template>
-  <div :class="{ change_color: scrollPosition > 50 }" class="header-container">
-    <p>Kevan Doyle</p>
+  <div :class="{ change_color: scrollPosition > 50 }" class="wrapper">
+    <h4 class="title">Kevan Doyle</h4>
+    <h4 class="mobile-title">{{$route.name}}</h4>
     <div class="navigation-menu">
       <router-link to="/photo">Photo</router-link>
       <router-link to="/film">Film</router-link>
@@ -16,9 +17,9 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-.header-container {
+<style scoped lang="scss">
+
+.wrapper {
   position: sticky;
   top: 0;
   background-color: white;
@@ -27,8 +28,21 @@ export default {
   align-items: center;
   text-transform: uppercase;
   height: 15%;
-  padding: 0 2rem;
   z-index: 1;
+  padding: 0 var(--padding);
+  .mobile-title {
+      display: none;
+    }
+
+  @media screen and (max-width: 1025px) {
+    .title {
+      display: none
+    }
+    .mobile-title {
+      display: block;
+    }
+  }
+
   a,
   li {
     color: black;

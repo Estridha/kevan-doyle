@@ -33,16 +33,15 @@ export default {
 <style lang="scss" scoped>
 button {
   background: none;
-  color: black;
   border: none;
-  border-radius: 6px;
-  padding: 12px 15px;
+  color: black;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
   text-transform: uppercase;
-  margin: 1rem;
   font-size: 1.1rem;
 
   &.primary {

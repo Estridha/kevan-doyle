@@ -32,7 +32,7 @@ const routes = [
   },
   {
     path: '/contact/success',
-    name: 'MessageSentView',
+    name: 'Message sent',
     component: MessageSentView
   },
   {

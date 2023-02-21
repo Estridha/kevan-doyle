@@ -1,5 +1,5 @@
 <template>
-  <BaseH2 title="Contact"/>
+  <BaseH2 title="Contact Form"/>
     <div class="main-container">
         <form class="form-group" action="https://formsubmit.co/6b09b0cefdfd08ac5ba34b5da89d946c" method="POST">
           <!-- Honeypot -->
@@ -38,10 +38,9 @@ export default {
 <style lang="scss" scoped>
 .main-container {
   padding: 20px;
-  box-shadow: 0px 0px 5px #00000033;
-  border-radius: 8px;
-  margin: 2rem;
-  background-color: #e9e9e9;
+  border-radius: 4px;
+  margin: 2rem 0;
+  background-color: var(--block-background-color);
   @media screen and (max-width: 845px) {
       margin: 2rem 0;
   }
@@ -57,6 +56,7 @@ export default {
 
   textarea {
     height: 15rem;
+    margin-bottom: 1rem;
   }
 }
 .form-group input,

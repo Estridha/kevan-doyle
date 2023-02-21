@@ -49,7 +49,7 @@ export default {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 2.3rem 2rem 2.3rem 0;
+  padding: var(--padding) var(--padding) var(--padding) 0;
   transition: 0.2s linear;
 }
 

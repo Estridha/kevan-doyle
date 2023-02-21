@@ -40,7 +40,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Spectral&display=swap');
+@import './assets/styles/variables.css';
 #app {
   /*  background-image: url(@/assets/images/background.jpg);
   background-size: cover; */
@@ -50,8 +51,19 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: var(--dark-color);
   overflow: hidden;
+
+  h1, h2, h3, h4 {
+    font-family: 'Old Standard TT', serif;
+    font-weight: 400;
+  }
+
+  a, button {
+    font-family: 'Spectral', serif;
+  }
+
+
 }
 
 *,

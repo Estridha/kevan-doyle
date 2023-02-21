@@ -23,8 +23,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
-
 
 .landing-page-container {
   overflow: hidden;
@@ -34,7 +32,6 @@ export default {
   background-size: cover;
 }
 .landing-page-desc {
-  font-family: 'Megrim', cursive;
   padding-top: 30vh;
 }
 </style>

@@ -2,20 +2,18 @@
   <div class="about-container">
     <div class="page-section">
       <div class="content-container">
-        <div>
-        <img class="about-me-image" src="@/assets/images/aboutme.jpg" alt="" />
-      </div>
-      <div>
-        <BaseParagraph
-          text="Originally from Los Angeles, Kevan Doyle has worked on documentaries,
+        <BaseH2 title="About the photographer" />
+        <div class="desc-container">
+          <BaseParagraph
+            text="Originally from Los Angeles, Kevan Doyle has worked on documentaries,
           multi-media development, and behind-the-scenes creation and
           implementation of new television shows and movies. While traveling the
           world to pursue adventure film and photography, he supported product
           brand development and promotion as well as real estate advertising for
           companies in New York, Europe, Dominican Republic and Los Angeles."
-        />
-        <BaseParagraph
-          text="Under the tutelage of famed adventure photographer, director, and
+          />
+          <BaseParagraph
+            text="Under the tutelage of famed adventure photographer, director, and
           explorer Chris Burkard, he has gained an understanding and
           appreciation of what it takes to get the perfect outdoor shot.
           Combining a solid baseline of knowledge from assisting Chris with
@@ -24,18 +22,18 @@
           he brings passion and creative engagement to every project. Kevan
           Doyle delivers quality videography, exceptional photography and
           experienced drone work to any project."
-        />
-        <BaseParagraph
-          text="Please inquire about his various services by email
+          />
+          <BaseParagraph
+            text="Please inquire about his various services by email
           (kevandoylefilms@gmail.com) or by filling out the contact form. Feel
           free to check out his instagram @kevandoyle_ to see recent work. Kevan
           Doyle is here to fulfill all your content and filming needs."
-        />
-        <router-link to="/photo"
-          ><BaseButton buttonClass="primary" text="Explore his work"
-        /></router-link>
+          />
+          <router-link to="/photo"
+            ><BaseButton buttonClass="primary" text="Explore his work"
+          /></router-link>
+        </div>
       </div>
-    </div>
     </div>
     <div class="previous-brands-card">
       <BaseH2 title="Previous collaborations" />
@@ -176,7 +174,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.about-container {
+  padding: 0 var(--padding);
+}
 .about-me-image {
+  flex: 1;
   width: 100%;
   border-radius: 50%;
 }
@@ -186,16 +188,13 @@ export default {
 
   .content-container {
     @media screen and (min-width: 845px) {
-    display: flex;
-    align-items: flex-start;
-    margin: 0 2rem;
+      //display: flex;
+      align-items: flex-start;
     }
   }
 
   .desc-container {
-    .desc-text {
-      text-align: left;
-    }
+    flex: 3;
   }
   .portrait-image {
     @media screen and (min-width: 1025px) {
@@ -209,16 +208,18 @@ export default {
 }
 
 .previous-brands-card {
-  margin: 1rem;
+  margin: 2rem 0;
 }
 
 .collabs-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 2rem;
 
   .collabs-logo-image {
     height: 3.5rem;
+    max-width: 100%;
     margin: 1rem;
   }
 }

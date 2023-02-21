@@ -21,18 +21,16 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .footer-container {
-  background-color: rgba(0, 0, 0, 0.119);
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 7%;
+  padding: 0 var(--padding);
 
   @media screen and (max-width: 1025px) {
     justify-content: center;
   }
   .footer-element {
-    margin: 0 2.5rem;
-
     &.copyright {
       @media screen and (max-width: 1025px) {
         display: none;
@@ -42,6 +40,9 @@ export default {
       a {
         display: flex;
         margin: 0.3rem;
+        &:last-child {
+          margin-right: 0;
+        }
       }
       display: flex;
       align-items: center;

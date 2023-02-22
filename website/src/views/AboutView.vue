@@ -35,7 +35,7 @@
         </div>
       </div>
     </div>
-    <div class="previous-brands-card">
+<!--     <div class="previous-brands-card">
       <BaseH2 title="Previous collaborations" />
       <div class="collabs-container">
         <img
@@ -94,7 +94,7 @@
           alt="Nothing New Logo"
         />
       </div>
-    </div>
+    </div> -->
     <div class="previous-brands-card">
       <BaseH2 title="Featured on" />
       <div class="collabs-container">

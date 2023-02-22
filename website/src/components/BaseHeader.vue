@@ -1,7 +1,7 @@
 <template>
-  <div :class="{ change_color: scrollPosition > 50 }" class="wrapper">
+  <div class="wrapper">
     <h4 class="title">Kevan Doyle</h4>
-    <h4 class="mobile-title">{{$route.name}}</h4>
+    <h2 class="mobile-title">{{$route.name}}</h2>
     <div class="navigation-menu">
       <router-link to="/photo">Photo</router-link>
       <router-link to="/film">Film</router-link>
@@ -34,6 +34,10 @@ export default {
       display: none;
     }
 
+    .mobile-title {
+      padding-top: 1rem;
+    }
+
   @media screen and (max-width: 1025px) {
     .title {
       display: none
@@ -57,12 +61,6 @@ export default {
     font-weight: bold;
   }
 }
-
-.change_color {
-  transition: 2s ease;
-  background-color: white;
-}
-
 .navigation-menu {
   display: flex;
   align-items: center;

@@ -47,9 +47,8 @@ export default {
 }
 .menu-icon {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: var(--padding) var(--padding) var(--padding) 0;
+  top: 2rem;
+  right: 2rem;
   transition: 0.2s linear;
 }
 
